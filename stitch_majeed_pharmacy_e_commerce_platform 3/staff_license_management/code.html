@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#131b2e","outline":"#6e7977","inverse-surface":"#283044","on-secondary-fixed-variant":"#005236","on-secondary-container":"#00714d","on-error":"#ffffff","surface":"#faf8ff","tertiary-container":"#006fa8","outline-variant":"#bdc9c6","surface-variant":"#dae2fd","primary":"#005c55","inverse-on-surface":"#eef0ff","on-tertiary":"#ffffff","on-surface-variant":"#3e4947","error-container":"#ffdad6","secondary-fixed-dim":"#4edea3","surface-container-low":"#f2f3ff","secondary":"#006c49","on-primary-fixed-variant":"#00504a","secondary-container":"#6cf8bb","surface-tint":"#006a63","tertiary":"#005683","on-background":"#131b2e","surface-container-high":"#e2e7ff","surface-container-highest":"#dae2fd","tertiary-fixed-dim":"#93ccff","on-tertiary-container":"#dbecff","on-secondary":"#ffffff","surface-bright":"#faf8ff","primary-fixed":"#9cf2e8","on-primary":"#ffffff","surface-container-lowest":"#ffffff","surface-container":"#eaedff","inverse-primary":"#80d5cb","on-tertiary-fixed":"#001d31","primary-fixed-dim":"#80d5cb","on-tertiary-fixed-variant":"#004b73","error":"#ba1a1a","surface-dim":"#d2d9f4","secondary-fixed":"#6ffbbe","on-secondary-fixed":"#002113","on-primary-fixed":"#00201d","on-primary-container":"#a3faef","primary-container":"#0f766e","background":"#faf8ff","tertiary-fixed":"#cce5ff","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","space-xl":"2.5rem","gutter-mobile":"1rem","margin-mobile":"1rem","space-sm":"0.5rem","margin-tablet":"2rem","space-lg":"1.5rem","space-xs":"0.25rem","margin":"3rem","space-md":"1rem"},"fontFamily":{"display-lg-mobile":["Plus Jakarta Sans"],"code-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-sm":["Inter"]},"fontSize":{"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-low"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">local_pharmacy</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Majeed</span><span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mt-1">Clinical Rx Hub</span></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline">Dispensing Operations</div></div><nav class="px-space-sm flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="rx-verification-queue" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-md text-label-md">Rx Verification Queue</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inventory-and-cold-chain" href="#"><span class="material-symbols-outlined text-[20px]">ac_unit</span><span class="font-label-md text-label-md">Inventory &amp; Cold-Chain</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="orders-and-fleet-dispatch" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="font-label-md text-label-md">Orders &amp; Fleet Dispatch</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audits-and-dea-compliance" href="#"><span class="material-symbols-outlined text-[20px]">policy</span><span class="font-label-md text-label-md">Audits &amp; DEA Compliance</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="prescriber-and-clinic-directory" href="#"><span class="material-symbols-outlined text-[20px]">clinical_notes</span><span class="font-label-md text-label-md">Prescriber &amp; Clinic Directory</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary font-semibold" data-path="staff-and-license-management" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-md text-label-md">Staff &amp; License Management</span></a><a class="flex items-center gap-space-sm px-space-md py-space-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing-pbm-and-claims-adjudication" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Billing, PBM &amp; Claims</span></a></nav></div><div class="p-space-md m-space-sm rounded-xl bg-surface-container flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">DEA Schedule II Safe</span><span class="w-2 h-2 rounded-full bg-secondary"></span></div><div class="font-code-sm text-code-sm text-outline">SEC-VAULT-04 • LOCKED</div><div class="font-body-sm text-body-sm text-on-surface-variant mt-1">PIC Attestation valid for shift</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-20 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search Rx#, Patient MRN, NDC code, or Prescriber NPI..." type="search"/></div></div><div class="flex items-center gap-space-sm"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-3 py-1.5 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Active Hub: Main Dispary</span></div><div class="hidden 2xl:flex items-center gap-space-xs bg-surface-container px-3 py-1.5 rounded-full"><span class="material-symbols-outlined text-[16px] text-secondary">lock</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Vault Locked</span></div><div class="hidden lg:flex items-center gap-space-xs bg-surface-container px-3 py-1.5 rounded-full"><span class="material-symbols-outlined text-[16px] text-primary">device_thermostat</span><span class="font-code-sm text-code-sm text-on-surface-variant font-semibold">+3.8°C</span><span class="font-label-sm text-label-sm text-outline">(Safe)</span></div></div><div class="flex items-center gap-space-sm"><button class="h-10 px-space-md bg-error text-on-error font-label-md text-label-md rounded-lg flex items-center gap-1.5 hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">pause_circle</span><span>Emergency Hold</span></button><button class="h-10 px-space-md bg-primary-container text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 hover:bg-primary transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>New Manual Rx</span></button><button aria-label="Notifications" class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="h-8 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-space-sm"><div class="text-right hidden sm:flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Dr. Sarah Jenkins, PharmD</span><span class="font-label-sm text-label-sm text-primary">PIC &amp; Clinical Administrator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP SUMMARY & ACTION STRIP -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary font-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span>Pharmacy Board Operations • 16 CCR Compliance Live</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Staff Credentials &amp; Licensure Registry</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-0.5">
+        Real-time credential tracking, NABP automated primary source verification, and statutory supervision ratios under Pharmacist-in-Charge jurisdiction.
+      </p>
+</div>
+<!-- Quick Action Bar -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<button class="h-10 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_forward</span>
+<span>Verify State Board API</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_view_week</span>
+<span>Shift Schedule Matrix</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Audit Trail Log</span>
+</button>
+<button class="h-10 px-space-md bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Onboard Clinician / Tech</span>
+</button>
+</div>
+</div>
+<!-- KPI CARDS (Bento Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- On-Duty Staff -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Active Roster Presence</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">18</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">/ 22 Rostered</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">4 Clinicians &amp; 14 Techs actively deployed</p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Shift A (07:00-15:30)</span>
+<span class="inline-flex items-center gap-1 font-code-sm text-code-sm text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>100% Target Met
+        </span>
+</div>
+</div>
+<!-- State Board License Compliance -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Board Licensure Status</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">100%</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">Good Standing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">0 Delinquent, 0 Board Sanctions logged</p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">BOP Auto-Sync</span>
+<span class="font-code-sm text-code-sm text-primary font-medium">Pinged 42m ago</span>
+</div>
+</div>
+<!-- Immunization & BLS/CPR Certs -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Clinical Immunization Auth</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">vaccines</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">100%</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Certified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">APhA Vaccine &amp; AHA BLS Validated</p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Expiring Next 60d</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">1 Recert Pending</span>
+</div>
+</div>
+<!-- DEA Form 222 Power of Attorney -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">DEA Schedule II Signers</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">vpn_key</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">3</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">PharmD Delegated</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">DEA Form 222 + CSOS Digital Tokens</p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Safe Vault Access</span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">Dual-Sign Enforced</span>
+</div>
+</div>
+</div>
+<!-- REGULATORY RATIO & SHIFT MATRIX SPLIT -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left: Regulatory Ratio Card (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">balance</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Legal Supervision Ratio</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 16 CCR § 1793.7 Compliant
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          California Code of Regulations establishes a 1:2 Pharmacist-to-Technician limit in retail community settings.
+        </p>
+<!-- Visual Ratio Gauge Indicator -->
+<div class="mt-space-md p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Current Bay Ratio</span>
+<span class="font-display-lg text-display-lg text-primary font-bold leading-none mt-1">1 : 2.0</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Statutory Ceiling</span>
+<span class="font-headline-md text-headline-md text-on-surface-variant font-semibold leading-none mt-1">Max 1 : 2.0</span>
+</div>
+</div>
+<!-- Progress Bar Representation -->
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden relative mt-2">
+<div class="h-full bg-primary rounded-full" style="width: 100%;"></div>
+</div>
+<div class="flex justify-between items-center font-code-sm text-code-sm text-on-surface-variant mt-1">
+<span>2 Active Supervising PharmDs</span>
+<span class="text-primary font-semibold">4 Allowed Technicians Deployed</span>
+</div>
+</div>
+<!-- Clinical Bay breakdown -->
+<div class="mt-space-md grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Dispensing Bay 1</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5">1 RPh • 2 CPhT</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium mt-1">Compliant</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Sterile Compounding Suite</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5">1 RPh • 1 CPhT</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium mt-1">USP &lt;797&gt; Cleared</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Next Shift Turnover in 2h 14m</span>
+<button class="font-label-sm text-label-sm text-primary font-semibold hover:underline flex items-center gap-1" type="button">
+<span>Recalculate Ratios</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Right: Cold Chain & Shift Matrix Graphic (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[22px]">calendar_today</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Coverage Schedule &amp; Cold-Chain On-Call</h2>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Active Shift
+            <span class="w-2.5 h-2.5 rounded-full bg-tertiary-container ml-2"></span> On-Call Safe
+          </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Continuous 24-hour pharmaceutical chain custody and telemetry escalation roster.
+        </p>
+<!-- Timeline Visual Representation -->
+<div class="mt-space-md grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Shift 1: Morning Primary -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Morning Core</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-code-sm text-code-sm">CURRENT</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">07:00 – 15:30</div>
+<div class="mt-space-sm flex flex-col gap-1">
+<div class="font-label-sm text-label-sm text-on-surface font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">person</span>
+<span>Dr. Sarah Jenkins (PIC)</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant pl-5">6 Techs Active • Bay 1 &amp; 2</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">ac_unit</span>
+<span>Cold Chain: Monitored</span>
+</div>
+</div>
+<!-- Shift 2: Afternoon & Clinical Delivery -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-tertiary"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-semibold">Afternoon</span>
+<span class="font-code-sm text-code-sm text-outline">UPCOMING</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">15:00 – 23:30</div>
+<div class="mt-space-sm flex flex-col gap-1">
+<div class="font-label-sm text-label-sm text-on-surface font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">person</span>
+<span>Dr. Tariq Al-Majeed</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant pl-5">5 Techs Active • Fleet Link</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">shield</span>
+<span>CSOS Lead Ready</span>
+</div>
+</div>
+<!-- Shift 3: Overnight / Cold Chain Telemetry -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-outline"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Overnight On-Call</span>
+<span class="font-code-sm text-code-sm text-outline">STANDBY</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">23:00 – 07:00</div>
+<div class="mt-space-sm flex flex-col gap-1">
+<div class="font-label-sm text-label-sm text-on-surface font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">phone_in_talk</span>
+<span>Dr. Marcus Vance, RPh</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant pl-5">Remote Telemetry • Escalation</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>Fridge-A (+3.8°C) Link</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Automated Emergency Dial Tree: Active with 3 verified lines</span>
+<button class="font-label-sm text-label-sm text-primary font-semibold hover:underline flex items-center gap-1" type="button">
+<span>Manage On-Call Protocols</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+<!-- STATE BOARD EXPIRATION WATCHLIST & AUDIT CALLOUT -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">notification_important</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Credential Expiration &amp; CE Renewal Watchlist</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">NABP Primary Source Verified every 24h • Flagged under 60-day renewal threshold</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-lg flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>Send Reminders to Staff</span>
+</button>
+</div>
+</div>
+<!-- Alert Items Stack -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Alert 1 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">assignment_late</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">David Wu, CPhT • License #TCH-88390</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-semibold">Expires in 45 Days</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              California State Board of Pharmacy Biennial Renewal deadline: <span class="font-code-sm text-code-sm font-semibold text-on-surface">Dec 15, 2024</span>. 
+              Continuing Education credits currently: <span class="text-error font-medium">18/20 CEUs completed</span> (2 Law/Ethics CEUs missing).
+            </p>
+</div>
+<div class="mt-space-sm flex items-center gap-space-sm">
+<button class="font-label-sm text-label-sm text-primary font-semibold hover:underline" type="button">Upload CE Certificate</button>
+<span class="text-outline">•</span>
+<button class="font-label-sm text-label-sm text-primary font-semibold hover:underline" type="button">Launch CA BOP Renewal Portal</button>
+</div>
+</div>
+</div>
+<!-- Alert 2 -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Mandatory HIPAA &amp; USP 800 Recertification</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Due in 7 Days</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Annual clinical staff compliance training module requirement for Hazardous Drug Handling &amp; PHI Privacy audits. 
+              <span class="font-code-sm text-code-sm font-semibold text-on-surface">3 Techs pending sign-off</span> (E. Gomez, K. Patel, J. Martinez).
+            </p>
+</div>
+<div class="mt-space-sm flex items-center gap-space-sm">
+<button class="font-label-sm text-label-sm text-primary font-semibold hover:underline" type="button">Trigger LMS Blast</button>
+<span class="text-outline">•</span>
+<button class="font-label-sm text-label-sm text-primary font-semibold hover:underline" type="button">View Module Completion Log</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- DISPENSARY STAFF ROSTER (TABULAR DIRECTORY) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header Toolbar -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Credentialed Dispensary Team</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live registry with biometric vault locks, DEA authorization, and Board verification</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="h-9 pl-9 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary w-56 sm:w-64" placeholder="Filter clinician or license #..." type="text"/>
+</div>
+<select class="h-9 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none cursor-pointer">
+<option>All Roles (PharmD, CPhT, Intern)</option>
+<option>Pharmacist-in-Charge Only</option>
+<option>Staff Pharmacists (RPh)</option>
+<option>Certified Techs (CPhT)</option>
+</select>
+<button class="h-9 px-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Form 17</span>
+</button>
+</div>
+</div>
+<!-- Responsive Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-lg">Clinician &amp; Role</th>
+<th class="py-space-sm px-space-md">State Board License &amp; Expiry</th>
+<th class="py-space-sm px-space-md">CE Units (CEU)</th>
+<th class="py-space-sm px-space-md">DEA Form 222 (CSOS)</th>
+<th class="py-space-sm px-space-md">Biometric Vault</th>
+<th class="py-space-sm px-space-md">Current Shift Status</th>
+<th class="py-space-sm px-space-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface divide-y divide-surface-container">
+<!-- Row 1: Dr. Sarah Jenkins (PIC) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-primary/10 overflow-hidden flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional clinical headshot portrait of Dr. Sarah Jenkins, an experienced female pharmacist wearing a pristine white lab coat and stethoscope with a subtle clinical teal background, soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlgSAmNQxRcLZK4NCZqHGI37zGOg3mMTwJ0-ANJVnbrshG6AfG_vvpH5otG37E5VusqqoRPyoClBXFKPmzVjEvFnRaiQUU1Ug2STi4fGvwLYdgO7ycJ0nS31o69iCq9MnGHXOruS7d18MWwGgoU7VfnMl79JmWd6G9F4Q3TOjCjGSrzhJBffvNs1kbVSQ1C6_bGUvyvRirNjKANQfurM-ybTW4EkztWKM-0oZbiKA"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. Sarah Jenkins, PharmD</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">PIC</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">NPI: 1849204910 • APh Immunization / MTM</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface">RPH-77491 (CA BOP)</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Expires in 340 days</span>
+<span class="font-code-sm text-code-sm text-outline">Renew: Oct 31, 2025</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-secondary">30 / 30 CEUs</span>
+<span class="text-outline">100%</span>
+</div>
+<div class="w-28 h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Law &amp; Ethics Completed</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-secondary">
+<span class="material-symbols-outlined text-[16px]">vpn_key</span> Active Power of Attorney
+                </span>
+<span class="font-code-sm text-code-sm text-outline">CSOS Token ID #TK-9921A</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">fingerprint</span> PIC Master Key
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Clocked In</span>
+<span class="font-code-sm text-code-sm text-outline">Bay 1 Supervisory Desk</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="View License Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="Update Permissions" type="button">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Dr. Tariq Al-Majeed (Staff Pharmacist) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-primary/10 overflow-hidden flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="Warm and confident male clinical pharmacist Dr. Tariq Al-Majeed wearing a laboratory coat with prescription clipboard in a modern sterile dispensary background, cinematic medical lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKHkE2dZNV3ZODyoyYqy1xJAVVWT5wCQt3vqu130wDcwhh6Lc2C4FwsuDyiikufeYwjHmnK5sEp0SWWqup2mB0BqEmbdCG9ZLvqOP6jkI4d5eC_PDlzMRDBdP-m7w--r9liyO7u68hkbLfc1G9kqUrFmXXBE_uEBTkVpjH1PiwakluX3xYERNfqU7i2fol58U2Ycwxxdut4TmSIKsVLLGn7Vyzbll44cAHjRjxV5U"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. Tariq Al-Majeed, RPh</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">Staff RPh</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">BCACP • Clinical Ambulatory Care</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface">RPH-82019 (CA BOP)</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Expires in 182 days</span>
+<span class="font-code-sm text-code-sm text-outline">Renew: May 20, 2025</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-secondary">30 / 30 CEUs</span>
+<span class="text-outline">100%</span>
+</div>
+<div class="w-28 h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Cardiology MTM Auth</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-secondary">
+<span class="material-symbols-outlined text-[16px]">vpn_key</span> Active Power of Attorney
+                </span>
+<span class="font-code-sm text-code-sm text-outline">CSOS Token ID #TK-4819B</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">lock_open</span> C-II Vault Dual Auth
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Clocked In</span>
+<span class="font-code-sm text-code-sm text-outline">Verification Station A</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="View License Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="Update Permissions" type="button">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Elena Gomez (Lead Compounding Tech) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-secondary/10 overflow-hidden flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Elena Gomez, a focused female pharmacy technician wearing sterile blue cleanroom scrubs and hairnet in a sterile IV cleanroom laboratory, high-tech clinical environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs165gEKzTDftiN_Eul4xDOZBHVt-HJOkwjJ3Y_DAXux4XEPpkUIbFc-jeG3aHS6pU3pjYdt_Q3VZ6y4HNwG01wMUVsOlfejQh3rg2cwkTpaNtqB2lXgw4_nUf0Jwtq_s5BnpGfIewS40dHJVqC3RiVsOFg_L9UFjAz2JCMjR_md-Lug1P8nh0SHwo0yHZzqkJOXX6DlcfkX161TSY3y4_zSR0yX0dCGT1SYtTjvs"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Elena Gomez, CPhT</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Lead Compounding Tech</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">PTCB Certified • USP &lt;797&gt; / &lt;800&gt;</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface">TCH-61902 (CA BOP)</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Expires in 210 days</span>
+<span class="font-code-sm text-code-sm text-outline">Renew: Jun 14, 2025</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-secondary">20 / 20 CEUs</span>
+<span class="text-outline">100%</span>
+</div>
+<div class="w-28 h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Sterile Aseptic Prep Valid</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px]">do_not_disturb</span> Non-Signatory (Tech Tier)
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">door_front</span> Compounding Suite Only
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Clocked In</span>
+<span class="font-code-sm text-code-sm text-outline">Cleanroom Suite ISO-7</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="View License Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="Update Permissions" type="button">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: David Wu (Cold-Chain Logistics Specialist) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/10">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-tertiary/10 overflow-hidden flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of David Wu, an Asian male pharmacy inventory technician in safety lab coat reviewing cold storage vials inside a commercial pharmacy depot, bright medical LED background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw8_IYANielNC25VjPphgtwfakwyMHjWx3phsVLW5nad1wMlBfaPZ0zhkKUjZnEbaPQBF55THl4k_1xeZGnyXSIW6dP9F8C1B65GxKsOVyJB6F3lyV9CW-1ud3Afijakcf7UF3Jv-eH8eGfL6KBRoFQcQa1Dtyb0y5ha9h_cUHGBWhPueK60vhqEvO-0G09yhHB4xFTE8IZG35bB3cW1cbk8a009Zz5VRK064odlw"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface">David Wu, CPhT</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Cold-Chain Lead</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Vaccine Coordinator • NPI: 1029482918</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface">TCH-88390 (CA BOP)</span>
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Expires in 45 days
+                </span>
+<span class="font-code-sm text-code-sm text-outline">Renew: Dec 15, 2024</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-error">18 / 20 CEUs</span>
+<span class="text-error font-semibold">90%</span>
+</div>
+<div class="w-28 h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 90%;"></div>
+</div>
+<span class="font-code-sm text-code-sm text-error">2 Law CEUs Required</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px]">do_not_disturb</span> Non-Signatory
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">ac_unit</span> Bio-Fridge 1 &amp; 2 Pass
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Clocked In</span>
+<span class="font-code-sm text-code-sm text-outline">Cold Logistics Bay</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-primary transition-colors" title="View License Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-error transition-colors" title="Log CE Credits" type="button">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Audit Footer -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Showing 4 of 22 registered staff members • California BOP API Hash: <span class="font-code-sm text-code-sm">#SHA256-BOP-2024-8199</span></span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">Previous</button>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface px-2">Page 1 of 6</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- CLINICIAN ACTION MODAL DRAWER PLACEHOLDER & VAULT PERMISSION LOG -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Vault Security Attestation (1 Col) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">fingerprint</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Schedule II Vault Access</h3>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Biometric clearance requires active PIC approval and synchronized DEA 222 CSOS signature keys.
+        </p>
+<div class="mt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between p-2 bg-surface-container-low rounded-lg font-code-sm text-code-sm">
+<span class="text-on-surface">VAULT-04 COMBINATION</span>
+<span class="text-secondary font-semibold">Active • Rotated Today</span>
+</div>
+<div class="flex items-center justify-between p-2 bg-surface-container-low rounded-lg font-code-sm text-code-sm">
+<span class="text-on-surface">DUAL-SIGN OVERRIDE</span>
+<span class="text-primary font-semibold">PIC + Staff RPh Required</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<button class="w-full h-10 px-space-md bg-error hover:bg-error-container hover:text-on-error-container text-on-error font-label-md text-label-md rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Emergency Revoke All Vault Access</span>
+</button>
+</div>
+</div>
+<!-- Quick CE Credential Logger (2 Cols) -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Expedited Continuing Education (CE) Intake</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">ACPE Live Integration</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Directly attach official ACPE or NABP CPE Monitor transcript certificates to an on-duty clinician dossier.
+        </p>
+<div class="mt-space-md grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Select Clinician</label>
+<select class="w-full h-10 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>David Wu, CPhT (#TCH-88390)</option>
+<option>Elena Gomez, CPhT (#TCH-61902)</option>
+<option>Dr. Tariq Al-Majeed, RPh (#RPH-82019)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Course Accreditation #</label>
+<input class="w-full h-10 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="e.g., ACPE 0204-0000-24-..." type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">CE Units (CEU / Hrs)</label>
+<input class="w-full h-10 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="2.0 CEU" step="0.5" type="number"/>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-outline">Instant certificate validation against NABP CPE Monitor API</span>
+<button class="h-10 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Submit &amp; Validate with NABP</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Quick interactive prototype helper for filter & feedback states
+  document.addEventListener('DOMContentLoaded', () => {
+    const revokeBtn = document.querySelector('button:has(span:contains("Emergency Revoke"))') || document.querySelector('button.bg-error');
+    if (revokeBtn) {
+      revokeBtn.addEventListener('click', () => {
+        if (confirm('CRITICAL ACTION: Are you sure you want to trigger emergency vault lock and revoke biometric clearance for all non-PIC personnel?')) {
+          alert('Vault lock engaged. Notification dispatched to PIC Dr. Sarah Jenkins and Chief Compliance Officer.');
+        }
+      });
+    }
+  });
+</script></main></div></body></html>

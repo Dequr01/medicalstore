@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#9cf2e8","primary":"#005c55","on-secondary-fixed-variant":"#005236","on-tertiary-fixed":"#001d31","on-tertiary":"#ffffff","secondary":"#006c49","surface-tint":"#006a63","on-primary-fixed":"#00201d","tertiary-fixed":"#cce5ff","surface-container-highest":"#dae2fd","inverse-primary":"#80d5cb","surface-container":"#eaedff","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","background":"#faf8ff","inverse-on-surface":"#eef0ff","tertiary-container":"#006fa8","on-primary":"#ffffff","primary-container":"#0f766e","secondary-fixed-dim":"#4edea3","on-surface":"#131b2e","surface-container-high":"#e2e7ff","outline":"#6e7977","on-tertiary-container":"#dbecff","on-primary-container":"#a3faef","secondary-fixed":"#6ffbbe","surface-container-low":"#f2f3ff","error-container":"#ffdad6","surface-dim":"#d2d9f4","on-secondary-container":"#00714d","surface":"#faf8ff","on-error-container":"#93000a","on-error":"#ffffff","surface-bright":"#faf8ff","on-primary-fixed-variant":"#00504a","on-secondary-fixed":"#002113","tertiary-fixed-dim":"#93ccff","tertiary":"#005683","error":"#ba1a1a","on-surface-variant":"#3e4947","outline-variant":"#bdc9c6","on-tertiary-fixed-variant":"#004b73","inverse-surface":"#283044","surface-variant":"#dae2fd","primary-fixed-dim":"#80d5cb","secondary-container":"#6cf8bb","on-background":"#131b2e"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","margin-mobile":"1rem","margin-tablet":"2rem","space-md":"1rem","space-xl":"2.5rem","margin":"3rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"display-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"code-sm":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"500"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"700"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">local_pharmacy</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Majeed Rx</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Clinical Admin Portal</span></div></div><div class="px-space-md py-space-sm"><div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Operating Hub</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>Live</span></div><span class="font-body-sm text-body-sm font-semibold text-on-surface">Branch #04 (Central Hub)</span><span class="font-label-sm text-label-sm text-on-surface-variant">DEA Reg: #FJ892014 • Vault Locked</span></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-sm" data-active-classes="bg-primary-container text-on-primary shadow-sm font-semibold"><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dispensary-queue-rx-verification" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-md text-label-md">Rx Verification Queue</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="drug-inventory-cold-chain-logistics" href="#"><span class="material-symbols-outlined text-[20px]">ac_unit</span><span class="font-label-md text-label-md">Inventory &amp; Cold-Chain</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="patient-orders-courier-dispatch" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="font-label-md text-label-md">Orders &amp; Fleet Dispatch</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="clinical-audits-dea-compliance" href="#"><span class="material-symbols-outlined text-[20px]">policy</span><span class="font-label-md text-label-md">Audits &amp; DEA Compliance</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Cold Storage #2</span><span class="font-code-sm text-code-sm font-semibold text-secondary">+3.8°C</span></div><div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full rounded-full w-3/4"></div></div><span class="font-label-sm text-label-sm text-outline">Telemetry within safe zone (2-8°C)</span></div><div class="flex items-center justify-between pt-space-xs text-outline"><span class="font-label-sm text-label-sm">v4.18.2 Clinical Core</span><span class="material-symbols-outlined text-[18px] text-outline hover:text-on-surface cursor-pointer">help</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex-1 max-w-xl pr-space-md"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">search</span><input class="w-full h-11 pl-10 pr-space-md rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search Rx #, Patient MRN, or NDC SKU..." type="search"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="h-10 px-space-md rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-medium hover:bg-primary transition-colors flex items-center gap-space-xs shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">note_add</span><span>New Manual Rx</span></button><button class="h-10 px-space-md rounded-xl bg-error-container text-on-error-container font-label-md text-label-md font-medium hover:bg-error hover:text-on-error transition-colors flex items-center gap-space-xs" type="button"><span class="material-symbols-outlined text-[18px]">pause_circle</span><span>Emergency Hold</span></button></div><div class="h-8 w-px bg-surface-container-high"></div><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Sarah Jenkins, PharmD</span><div class="flex items-center justify-end gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Admin &amp; Pharmacist-in-Charge</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1440px] w-full mx-auto flex flex-col gap-space-xl">
+<!-- Top Bar: Operational Pulse & Telemetry Summary -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<span>Clinical Operations</span>
+<span>•</span>
+<span class="text-primary font-semibold">Formulary Control &amp; Cold-Chain V4</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Drug Inventory &amp; Thermal Logistics</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Continuous NIST-traceable sensor telemetry, automated DEA schedule tracking, and EDI supplier links.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-2 px-space-md py-2.5 rounded-xl bg-surface-container-low shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">IoT Hub: Connected (38 Nodes)</span>
+</div>
+<button class="h-10 px-space-md rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md font-medium hover:bg-surface-container-high transition-all flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Sync EDI Feeds</span>
+</button>
+<button class="h-10 px-space-md rounded-xl bg-primary text-on-primary font-label-md text-label-md font-medium hover:bg-primary-container transition-all flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory</span>
+<span>Cycle Count Log</span>
+</button>
+</div>
+</div>
+<!-- Telemetry & Sensor Hero Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Unit A: Main Refrigerator -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between transition-all hover:shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary-fixed/30 rounded-full blur-2xl group-hover:bg-primary-fixed/50 transition-all pointer-events-none"></div>
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container text-primary material-symbols-outlined text-[20px]">kitchen</span>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold block">Chamber 01</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Unit A Refrig</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Optimal
+            </span>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg text-primary font-bold tracking-tight">3.2</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">°C</span>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Humidity 44%</span>
+<span class="font-code-sm text-code-sm text-outline">Target: 2°C – 8°C</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<!-- Sparkline SVG -->
+<svg class="w-full h-10 text-primary" preserveaspectratio="none" viewbox="0 0 100 25">
+<path d="M0,14 L12,13 L24,15 L36,12 L48,13 L60,11 L72,13 L84,12 L96,13 L100,12.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<circle cx="100" cy="12.5" fill="currentColor" r="2.5"></circle>
+</svg>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mt-1">
+<span>24h Range: 3.0°C – 3.5°C</span>
+<span class="text-secondary font-medium">0 Excursions</span>
+</div>
+</div>
+</div>
+<!-- Vault B: Insulins & Biologics -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between transition-all hover:shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-secondary-fixed/20 rounded-full blur-2xl group-hover:bg-secondary-fixed/40 transition-all pointer-events-none"></div>
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container text-secondary material-symbols-outlined text-[20px]">vaccines</span>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold block">Chamber 02</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Vault B Insulins</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Optimal
+            </span>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg text-primary font-bold tracking-tight">4.1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">°C</span>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Humidity 48%</span>
+<span class="font-code-sm text-code-sm text-outline">Target: 2°C – 8°C</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<!-- Sparkline SVG -->
+<svg class="w-full h-10 text-secondary" preserveaspectratio="none" viewbox="0 0 100 25">
+<path d="M0,16 L15,14 L30,15 L45,13 L60,14 L75,13 L90,14 L100,13.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<circle cx="100" cy="13.5" fill="currentColor" r="2.5"></circle>
+</svg>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mt-1">
+<span>24h Range: 3.8°C – 4.3°C</span>
+<span class="text-secondary font-medium">100% Calibrated</span>
+</div>
+</div>
+</div>
+<!-- Deep Freeze Vaccines -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between transition-all hover:shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-tertiary-fixed/40 rounded-full blur-2xl group-hover:bg-tertiary-fixed/60 transition-all pointer-events-none"></div>
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container text-tertiary material-symbols-outlined text-[20px]">ac_unit</span>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold block">Cryo Safe</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Deep Freeze</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Ultra-Cold
+            </span>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg text-tertiary font-bold tracking-tight">-21.5</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">°C</span>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Humidity 22%</span>
+<span class="font-code-sm text-code-sm text-outline">Target: ≤ -20°C</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<!-- Sparkline SVG -->
+<svg class="w-full h-10 text-tertiary" preserveaspectratio="none" viewbox="0 0 100 25">
+<path d="M0,10 L15,11 L32,10 L50,12 L68,9 L85,11 L100,10.2" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<circle cx="100" cy="10.2" fill="currentColor" r="2.5"></circle>
+</svg>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mt-1">
+<span>24h Range: -22.1°C – -21.0°C</span>
+<span class="text-secondary font-medium">CDC Certified</span>
+</div>
+</div>
+</div>
+<!-- Dispensary Floor & Power Grid -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container text-on-surface-variant material-symbols-outlined text-[20px]">thermostat</span>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold block">Controlled Room</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Ambient Floor</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> USP &lt;659&gt;
+            </span>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">21.2</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">°C</span>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Humidity 41%</span>
+<span class="font-code-sm text-code-sm text-outline">Target: 20°C – 25°C</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">bolt</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Generator Standby</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary font-bold">100% Ready</span>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mt-2">
+<span>NIST Cal: 12 days ago</span>
+<span class="text-on-surface-variant">Auto-Failover Armed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Automated EDI Re-order Requisition Ribbon -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">precision_manufacturing</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Predictive EDI Replenishment Gateway</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">2 Critical Items Under Par</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Algorithms project stockout in 72h based on 30-day dispensing velocity. McKesson &amp; AmerisourceBergen POs staged.</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md w-full xl:w-auto justify-between xl:justify-end">
+<div class="flex items-center gap-space-md bg-surface-container-lowest px-space-md py-2.5 rounded-xl shadow-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Staged EDI Batch #4091</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$4,812.40 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ 5 Lines</span></span>
+</div>
+<div class="h-8 w-px bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Primary Wholesaler</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">McKesson Pharma</span>
+</div>
+</div>
+<button class="h-11 px-space-lg rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center gap-2 shadow-sm shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">send_time_extension</span>
+<span>Authorize &amp; Transmit PO</span>
+</button>
+</div>
+</div>
+<!-- Inventory Workspace Section -->
+<div class="flex flex-col gap-space-md">
+<!-- Filters and Search Toolbar -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search bar -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-11 pl-10 pr-4 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="inventory-search" placeholder="Search by NDC, Drug Salt, Brand Name, or Lot Number..." type="text"/>
+</div>
+<!-- Filter Chips Carousel/Row -->
+<div class="flex flex-wrap items-center gap-2 overflow-x-auto pb-1 lg:pb-0">
+<button class="filter-pill h-9 px-3.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold transition-all" type="button">All Inventory (842)</button>
+<button class="filter-pill h-9 px-3.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-medium transition-all flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Cold-Chain Required (118)
+          </button>
+<button class="filter-pill h-9 px-3.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-medium transition-all flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-error"></span> Low Stock (9)
+          </button>
+<button class="filter-pill h-9 px-3.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-medium transition-all flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> DEA C-II to C-V (46)
+          </button>
+<button class="filter-pill h-9 px-3.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-medium transition-all" type="button">Fast-Moving Velocity</button>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-2 shrink-0">
+<button class="h-10 px-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1 font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+<span>More Filters</span>
+</button>
+<button class="h-10 px-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1 font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<!-- Main Inventory Table -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/60 text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-space-md font-semibold">Medication &amp; Specs</th>
+<th class="py-3.5 px-space-md font-semibold">NDC / Barcode / Lot</th>
+<th class="py-3.5 px-space-md font-semibold">Stock Par Meter</th>
+<th class="py-3.5 px-space-md font-semibold">Shelf Life / Expiry</th>
+<th class="py-3.5 px-space-md font-semibold text-right">Cost / Dispense</th>
+<th class="py-3.5 px-space-md font-semibold text-right">Clinical Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Lantus SoloStar (Cold Chain, Low Stock) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/30 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">ac_unit</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Lantus SoloStar</span>
+<span class="px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Cold 2-8°C</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Insulin Glargine 100 units/mL (5x3mL Pens)</span>
+<span class="font-label-sm text-label-sm text-outline">Subcutaneous • Unit A Vault Ref #02</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface tracking-wider">00024-5901-05</span>
+<span class="font-code-sm text-code-sm text-outline">Lot: LT-9032A</span>
+<div class="flex items-center gap-1 text-outline font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">qr_code_2</span>
+<span>GS1 Scanned</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-error font-bold">12 pens</span>
+<span class="font-code-sm text-code-sm text-outline">Par: 40 pens</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 30%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-error font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">warning</span> Low Stock (30%)
+                    </span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">10/2026</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">18 months left</span>
+<span class="font-label-sm text-label-sm text-outline">Stable Shelf</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface">$284.10</span>
+<span class="font-code-sm text-code-sm text-outline">AWP: $310.00</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Optum $25 Co-pay</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-medium hover:bg-primary transition-colors flex items-center gap-1 shadow-xs" title="Auto Requisition" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Order</span>
+</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high flex items-center justify-center transition-colors" title="Action Menu" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Ozempic 2mg/3mL (Cold Chain, Near Expiry) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/30 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">ac_unit</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Ozempic</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Fast Moving</span>
+<span class="px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Cold 2-8°C</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Semaglutide 2mg / 3mL Pen-Injector</span>
+<span class="font-label-sm text-label-sm text-outline">GLP-1 RA • Vault B Shelf 3</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface tracking-wider">00169-4130-13</span>
+<span class="font-code-sm text-code-sm text-outline">Lot: OZ-4418P</span>
+<div class="flex items-center gap-1 text-outline font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">qr_code_2</span>
+<span>GS1 Scanned</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface font-bold">18 pens</span>
+<span class="font-code-sm text-code-sm text-outline">Par: 25 pens</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 72%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Optimal Velocity</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-error font-semibold">05/18/2025</span>
+<span class="font-body-sm text-body-sm text-error font-semibold">45 days [Near Expiry]</span>
+<span class="font-label-sm text-label-sm text-error">Priority Dispense</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface">$892.50</span>
+<span class="font-code-sm text-code-sm text-outline">AWP: $960.00</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Pre-Auth Active</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-error hover:bg-error-container transition-colors font-label-sm text-label-sm font-medium flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">rotate_right</span>
+<span>Rotate FEFO</span>
+</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Atorvastatin 20mg (Ambient, Solid Stock) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">medication</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Atorvastatin Calcium</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm">Ambient</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">20mg Film-Coated Tablets</span>
+<span class="font-label-sm text-label-sm text-outline">Statin • Bayshore Fast Bay 04</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface tracking-wider">00093-7154-98</span>
+<span class="font-code-sm text-code-sm text-outline">Lot: TE-81993</span>
+<div class="flex items-center gap-1 text-outline font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">qr_code_2</span>
+<span>GS1 Scanned</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface font-bold">1,420 tabs</span>
+<span class="font-code-sm text-code-sm text-outline">Par: 2,000 tabs</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 71%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Healthy Inventory</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">03/2027</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">23 months left</span>
+<span class="font-label-sm text-label-sm text-outline">Batch Stable</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface">$0.08 / tab</span>
+<span class="font-code-sm text-code-sm text-outline">Total: $113.60</span>
+<span class="font-label-sm text-label-sm text-outline">Tier 1 Generic</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-medium flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Par Level</span>
+</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Metformin HCl 500mg -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">pill</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Metformin HCl ER</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Fast Moving</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">500mg Extended-Release Tablets</span>
+<span class="font-label-sm text-label-sm text-outline">Biguanide • Aisle 2 Bay C</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface tracking-wider">67877-0562-05</span>
+<span class="font-code-sm text-code-sm text-outline">Lot: AS-22104</span>
+<div class="flex items-center gap-1 text-outline font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">qr_code_2</span>
+<span>GS1 Scanned</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface font-bold">3,850 tabs</span>
+<span class="font-code-sm text-code-sm text-outline">Par: 4,000 tabs</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 96%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Fully Stocked (96%)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">11/2026</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">19 months left</span>
+<span class="font-label-sm text-label-sm text-outline">Verified Safe</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface">$0.04 / tab</span>
+<span class="font-code-sm text-code-sm text-outline">Total: $154.00</span>
+<span class="font-label-sm text-label-sm text-outline">Tier 1 Generic</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-medium flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Audit Lot</span>
+</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Amoxicillin 500mg -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">healing</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Amoxicillin Trihydrate</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm">Antibiotic</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">500mg Hard Gelatin Capsules</span>
+<span class="font-label-sm text-label-sm text-outline">Penicillin • Shelf 12A</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface tracking-wider">00781-2613-05</span>
+<span class="font-code-sm text-code-sm text-outline">Lot: S-90119</span>
+<div class="flex items-center gap-1 text-outline font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">qr_code_2</span>
+<span>GS1 Scanned</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface font-bold">820 caps</span>
+<span class="font-code-sm text-code-sm text-outline">Par: 1,500 caps</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 54%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Reorder Point Approaching</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">09/2026</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">17 months left</span>
+<span class="font-label-sm text-label-sm text-outline">Stable</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-semibold text-on-surface">$0.12 / cap</span>
+<span class="font-code-sm text-code-sm text-outline">Total: $98.40</span>
+<span class="font-label-sm text-label-sm text-outline">Standard Antibiotic</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-medium flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">archive</span>
+<span>Quarantine</span>
+</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing <span class="font-semibold text-on-surface">1 - 5</span> of <span class="font-semibold text-on-surface">842</span> drug SKUs registered</span>
+<div class="flex items-center gap-1.5">
+<button class="h-9 px-3 rounded-lg bg-surface-container-low text-outline cursor-not-allowed font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+<span>Previous</span>
+</button>
+<button class="h-9 w-9 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold" type="button">1</button>
+<button class="h-9 w-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm" type="button">2</button>
+<button class="h-9 w-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="h-9 w-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm" type="button">42</button>
+<button class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span>Next</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Split: Cold-Chain Audit Protocol & DEA Scheduled Safe Control -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Cold Chain Protocol Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">policy</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">USP &lt;800&gt; / &lt;1079&gt; Audit Log</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">PASS (100%)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous digital data logging recorded every 120 seconds. Automated cloud telemetry archives kept for 3 calendar years.</p>
+<div class="flex flex-col gap-2 mt-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Mean Kinetic Temp (MKT)</span>
+<span class="font-code-sm text-code-sm font-bold text-primary">3.44°C (Normal)</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Sensor Drift Tolerance</span>
+<span class="font-code-sm text-code-sm font-bold text-secondary">±0.04°C (Optimal)</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Last Physical Calibration</span>
+<span class="font-code-sm text-code-sm font-semibold text-outline">March 14, 2025</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full h-10 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Download Telemetry Certificate (PDF)</span>
+</button>
+</div>
+<!-- Schedule Safe C-II Vault Monitor -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">shield_lock</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">DEA C-II Perpetual Safe</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Vault Locked</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Biometric dual-pharmacist authentication required. Real-time discrepancy detector active.</p>
+<div class="grid grid-cols-2 gap-2 mt-2">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Oxycodone 10mg</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">214 <span class="font-body-sm text-body-sm text-outline font-normal">tabs</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Reconciled 08:00</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Adderall XR 20mg</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">88 <span class="font-body-sm text-body-sm text-outline font-normal">caps</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Reconciled 08:00</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full h-10 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">fingerprint</span>
+<span>Access Safe &amp; Log Physical Count</span>
+</button>
+</div>
+<!-- Wholesaler EDI Fulfillment Dispatch Status -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">local_shipping</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Incoming Wholesaler Drop</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Tote En Route</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">McKesson Courier #MK-442 inbound with validated cold-storage totes (Dry ice + gel pack verified).</p>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2 mt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">ETA To Dispensary</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Today • 14:15 EST</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 78%;"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Departed Distribution Center</span>
+<span class="text-on-surface font-semibold">Check-in Dock 2</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">barcode_scanner</span>
+<span>Open Receiving Scanner</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for active filter pills
+  document.querySelectorAll('.filter-pill').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-pill').forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary');
+        p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      this.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      this.classList.add('bg-primary', 'text-on-primary');
+    });
+  });
+</script></main></div></body></html>
